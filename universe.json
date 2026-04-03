@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-03-07",
+  "pillars": {
+    "creacion": { "label": "Creación", "color": "#ff4e83", "emoji": "✏️" },
+    "educacion": { "label": "Educación", "color": "#1976D2", "emoji": "🎓" },
+    "cultura": { "label": "Cultura", "color": "#388E3C", "emoji": "🎭" },
+    "herramientas": { "label": "Herramientas Dev", "color": "#FF8F00", "emoji": "🔧" },
+    "hardware": { "label": "Hardware / IoT", "color": "#FFB300", "emoji": "🤖" }
+  },
+  "projects": [
+    {
+      "id": "calcaapp",
+      "name": "CalcaApp",
+      "pillar": "creacion",
+      "type": "app",
+      "description": "Mesa de luz digital — calca arte con tu móvil",
+      "urls": {
+        "playstore": "https://play.google.com/store/apps/details?id=com.apliarte.calcaapp",
+        "appstore": "https://apps.apple.com/app/calcaapp/id1588674017",
+        "web": "https://calcaapp.com",
+        "landing": "https://calcaapp-landing.web.app"
+      },
+      "stats": { "downloads": "5.6M+", "rating": "4.8", "languages": 15 },
+      "status": "published"
+    },
+    {
+      "id": "apliarte",
+      "name": "ApliArte",
+      "pillar": "educacion",
+      "type": "web",
+      "description": "Hub de Aprendizaje de Flutter",
+      "urls": {
+        "web": "https://apliarte.com",
+        "app": "https://app.apliarte.com"
+      },
+      "status": "published"
+    },
+    {
+      "id": "tutograti",
+      "name": "TutoGrati",
+      "pillar": "educacion",
+      "type": "web",
+      "description": "Plataforma de Tutoriales Gratuitos",
+      "urls": { "web": "https://tutograti.com" },
+      "status": "published"
+    },
+    {
+      "id": "tuaplicaciongratis",
+      "name": "TuAplicacionGratis",
+      "pillar": "educacion",
+      "type": "web",
+      "description": "Empoderamiento para Crear Apps sin programar",
+      "urls": { "web": "https://tuaplicaciongratis.com" },
+      "status": "published"
+    },
+    {
+      "id": "elbolademarbella",
+      "name": "El Bola de Marbella",
+      "pillar": "cultura",
+      "type": "web",
+      "description": "Identidad Personal / Cultural",
+      "urls": { "web": "https://elbolademarbella.com" },
+      "status": "published"
+    },
+    {
+      "id": "lachirigotadelbola",
+      "name": "La Chirigota del Bola",
+      "pillar": "cultura",
+      "type": "web",
+      "description": "Archivo de Música de Carnaval — Chirigotas",
+      "urls": { "web": "https://lachirigotadelbola.com" },
+      "status": "published"
+    },
+    {
+      "id": "lacomparsadelbola",
+      "name": "La Comparsa del Bola",
+      "pillar": "cultura",
+      "type": "web",
+      "description": "Archivo de Música de Carnaval — Comparsas",
+      "urls": { "web": "https://lacomparsadelbola.com" },
+      "status": "published"
+    },
+    {
+      "id": "apliarte-faq",
+      "name": "apliarte_faq",
+      "pillar": "herramientas",
+      "type": "package",
+      "description": "Paquete Flutter — FAQ/ayuda integrable en cualquier app",
+      "urls": {
+        "github": "https://github.com/erbolamm/apliarte_faq",
+        "pub": "https://pub.dev/packages/apliarte_faq"
+      },
+      "status": "published"
+    },
+    {
+      "id": "key-master",
+      "name": "Key Master",
+      "pillar": "herramientas",
+      "type": "extension",
+      "description": "Extensión VS Code — gestión de claves API",
+      "urls": {
+        "github": "https://github.com/erbolamm/key-master"
+      },
+      "status": "published"
+    },
+    {
+      "id": "corrector-vscode",
+      "name": "Corrector VS Code",
+      "pillar": "herramientas",
+      "type": "extension",
+      "description": "Extensión VS Code — corrector ortográfico",
+      "urls": {
+        "github": "https://github.com/erbolamm/corrector-vscode"
+      },
+      "status": "published"
+    },
+    {
+      "id": "aplimemo",
+      "name": "ApliMemo",
+      "pillar": "hardware",
+      "type": "device",
+      "description": "Asistente Cognitivo de Bolsillo — IA para personas mayores",
+      "urls": {},
+      "status": "wip"
+    },
+    {
+      "id": "jurado-popular",
+      "name": "Jurado Popular",
+      "pillar": "cultura",
+      "type": "web",
+      "description": "Sistema de votación popular para concursos de Carnaval con drag-and-drop",
+      "urls": {
+        "web": "https://jurado-popular.web.app"
+      },
+      "status": "published"
+    }
+  ]
+}

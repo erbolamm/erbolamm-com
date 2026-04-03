@@ -1,0 +1,30 @@
+{
+  "version": 4,
+  "lastUpdated": "2026-03-12",
+  "pillars": {
+    "musica": { "label": "Música", "color": "#2E7D32", "emoji": "🎸" },
+    "apps": { "label": "Apps", "color": "#E53935", "emoji": "📱" },
+    "aprendizaje": { "label": "Aprendizaje", "color": "#1565C0", "emoji": "🚀" },
+    "herramientas": { "label": "Herramientas", "color": "#FF8F00", "emoji": "🔧" },
+    "biografia": { "label": "Biografía", "color": "#8E24AA", "emoji": "📖" },
+    "juegos": { "label": "Juegos", "color": "#00E5FF", "emoji": "🕹️" }
+  },
+  "nodes": [
+    { "id": "erbolamm", "label": "ErBolamm", "size": 32, "color": "#8E24AA", "url": "https://erbolamm.com", "emoji": "🛸", "subtitle": "Tu universo digital", "type": "centro" },
+    { "id": "musica", "label": "Música", "size": 20, "color": "#2E7D32", "emoji": "🎸", "subtitle": "Carnaval y más", "type": "pilar", "pillar": "erbolamm" },
+    { "id": "creacion", "label": "Creador de Contenido", "size": 20, "color": "#2E7D32", "emoji": "🎥", "subtitle": "Youtube y RRSS", "type": "pilar", "pillar": "erbolamm" },
+    { "id": "apps", "label": "Apps", "size": 20, "color": "#E53935", "emoji": "📱", "subtitle": "Software propio", "type": "pilar", "pillar": "erbolamm" },
+    { "id": "aprendizaje", "label": "Aprendizaje", "size": 20, "color": "#1565C0", "emoji": "🚀", "subtitle": "Estudios y Tutoriales", "type": "pilar", "pillar": "erbolamm" },
+    { "id": "herramientas", "label": "Herramientas", "size": 20, "color": "#FF8F00", "emoji": "🔧", "subtitle": "Utilidades", "type": "pilar", "pillar": "erbolamm" },
+    { "id": "biografia", "label": "Historia", "size": 20, "color": "#8E24AA", "emoji": "📖", "subtitle": "Biografía", "type": "pilar", "pillar": "erbolamm" },
+    { "id": "javier", "label": "Javier Mateo", "size": 20, "color": "#BA68C8", "url": "https://erbolamm.com", "emoji": "👨‍💻", "subtitle": "Diseñador · Autor · Creador", "type": "identidad", "pillar": "biografia" },
+    { "id": "elbola", "label": "El Bola de Marbella", "size": 18, "color": "#BA68C8", "url": "https://elbolademarbella.com", "emoji": "🎭", "subtitle": "Escudo de Oro · 20+ años Carnaval", "type": "proyecto", "pillar": "biografia" },
+    { "id": "carnaval", "label": "Carnaval", "size": 16, "color": "#66BB6A", "url": "https://www.elbolademarbella.com/2024/02/historial-carnavalesco.html", "emoji": "🎪", "subtitle": "40 años de historia · 55 grupos", "type": "proyecto", "pillar": "musica", "canBeParent": true },
+    { "id": "calcaapp", "label": "CalcaApp", "size": 16, "color": "#EF5350", "url": "https://app.calcaapp.com", "emoji": "💡", "subtitle": "5.6M+ descargas · Mesa de luz digital", "type": "proyecto", "pillar": "apps" }
+  ],
+  "edges": [
+    ["erbolamm", "musica"], ["erbolamm", "creacion"], ["erbolamm", "apps"], ["erbolamm", "aprendizaje"], ["erbolamm", "herramientas"], ["erbolamm", "biografia"],
+    ["biografia", "javier"], ["biografia", "elbola"], ["musica", "carnaval"], ["apps", "calcaapp"]
+  ],
+  "showcaseNodes": ["erbolamm", "calcaapp", "carnaval"]
+}

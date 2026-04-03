@@ -1,0 +1,20 @@
+# ads.txt — ErBolamm.com (anuncios WEB solamente)
+# Para anuncios IN-APP (CalcaApp/AdMob) ver app-ads.txt
+#
+# Propietario: Javier Mateo (pub-5104493137290933)
+# Última revisión: 2026-03-07
+
+# === AdSense (web) — TU cuenta directa ===
+google.com, pub-5104493137290933, DIRECT, f08c47fec0942fa0
+
+# === Yandex Ads (web) — TU cuenta directa ===
+yandex.com, 303673435, DIRECT
+betweendigital.com, 43554, RESELLER
+
+# === CalcaApp web (calcaapp.com) ===
+improvedigital.com, 2031, RESELLER
+uis.mobfox.com, 165, RESELLER
+Contextweb.com, 562899, RESELLER, 89ff185a4c4e857c
+hyperad.tech, 150, RESELLER
+hyperad.tech, 215, RESELLER
+google.com, pub-5533854580432370, RESELLER, f08c47fec0942fa0

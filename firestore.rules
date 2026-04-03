@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 🏠 Perfiles de usuario
+    match /users/{userId} {
+      allow read: if request.auth != null; // Cualquiera logueado puede ver perfiles básicos
+      allow write: if request.auth != null && request.auth.uid == userId;
+      
+      // 🔮 Nodos personales (Universo)
+      match /nodes/{nodeId} {
+        allow read: if request.auth != null && (resource.data.scope == 'public' || request.auth.uid == userId);
+        allow write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // 🧠 Memorias (Engram-style)
+      match /memories/{memoryId} {
+        allow read: if request.auth != null && (resource.data.scope == 'public' || request.auth.uid == userId);
+        allow write: if request.auth != null && request.auth.uid == userId;
+      }
+
+      // ⚙️ Configuración IA
+      match /ai-config/{configId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+
+    // 🌍 Datos globales (Opcional, si movemos algo de RTDB a Firestore)
+    match /global/{docId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth.token.admin == true;
+    }
+  }
+}

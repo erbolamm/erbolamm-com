@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛠️ ErBolamm — Panel de Dev</title>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text: #f0f0f0;
+            --text-muted: #999;
+            --red: #B71C1C;
+            --red-light: #E53935;
+            --indigo: #3f51b5;
+            --radius: 12px;
+            --border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #fff 30%, var(--red-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            margin: 30px 0 15px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Enlaces Rápidos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: var(--border);
+            padding: 20px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 8px;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--red-light);
+            box-shadow: 0 5px 15px rgba(183,28,28,0.2);
+        }
+
+        .card-emoji { font-size: 1.5rem; }
+        .card-label { font-weight: 600; font-size: 0.9rem; }
+
+        /* Checklist */
+        .checklist {
+            background: var(--card-bg);
+            border: var(--border);
+            border-radius: var(--radius);
+            padding: 25px;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .check-item input {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--red);
+            cursor: pointer;
+        }
+
+        /* Notas */
+        .notes-area {
+            width: 100%;
+            height: 200px;
+            background: #000;
+            border: var(--border);
+            border-radius: var(--radius);
+            color: #4af626; /* Estilo terminal para notas */
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            resize: vertical;
+            outline: none;
+        }
+
+        .notes-area:focus {
+            border-color: var(--indigo);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🛠️ ErBolamm — Panel de Dev</h1>
+            <p style="color: var(--text-muted)">Herramientas y accesos rápidos para el desarrollo del universo.</p>
+        </header>
+
+        <div class="section-title">🔗 Enlaces Rápidos</div>
+        <div class="grid">
+            <a href="http://localhost:5173" class="card" target="_blank">
+                <span class="card-emoji">🏠</span>
+                <span class="card-label">Landing (dev)</span>
+            </a>
+            <a href="http://localhost:5174" class="card" target="_blank">
+                <span class="card-emoji">🌌</span>
+                <span class="card-label">Hub (dev)</span>
+            </a>
+            <a href="https://erbolamm-com.web.app" class="card" target="_blank">
+                <span class="card-emoji">🚀</span>
+                <span class="card-label">Landing (producción)</span>
+            </a>
+            <a href="https://erbolamm-hub.web.app" class="card" target="_blank">
+                <span class="card-emoji">🌐</span>
+                <span class="card-label">Hub (producción)</span>
+            </a>
+            <a href="https://console.firebase.google.com" class="card" target="_blank">
+                <span class="card-emoji">🔥</span>
+                <span class="card-label">Firebase Console</span>
+            </a>
+            <a href="https://github.com/erbolamm/erbolamm-com.git" class="card" target="_blank">
+                <span class="card-emoji">💻</span>
+                <span class="card-label">Repositorio Git</span>
+            </a>
+        </div>
+
+        <div class="section-title">📝 Checklist de Deploy</div>
+        <div class="checklist">
+            <label class="check-item"><input type="checkbox"> Probar en localhost</label>
+            <label class="check-item"><input type="checkbox"> Revisar universe.json actualizado</label>
+            <label class="check-item"><input type="checkbox"> Ejecutar: npm run build</label>
+            <label class="check-item"><input type="checkbox"> Ejecutar: firebase deploy</label>
+            <label class="check-item"><input type="checkbox"> Verificar en producción</label>
+        </div>
+
+        <div class="section-title">📓 Notas Temporales</div>
+        <textarea class="notes-area" placeholder="Escribe aquí tus notas para esta sesión... (No se guardan)"></textarea>
+
+        <footer>
+            <p>© 2026 ErBolamm Dev Panel</p>
+        </footer>
+    </div>
+
+</body>
+</html>
