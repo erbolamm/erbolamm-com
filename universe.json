@@ -147,15 +147,15 @@
       "status": "wip"
     },
     {
-      "id": "apli-kids-asis",
-      "name": "Apli Kids Asis",
-      "pillar": "educacion",
+      "id": "apliarte-legacy-app",
+      "name": "ApliArte Legacy Expo",
+      "pillar": "hardware",
       "type": "app",
-      "description": "Asistente educativo Cleo para Alba. Flutter + VPS ApliArte.",
+      "description": "Convierte dispositivos Android antiguos en servidores de IA locales, privados y offline",
       "urls": {
-        "github": "https://github.com/erbolamm/apli-kids-asis"
+        "github": "https://github.com/erbolamm/apliarte-legacy-app"
       },
-      "status": "published"
+      "status": "wip"
     }
   ]
 }
